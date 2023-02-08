@@ -6,7 +6,8 @@
   --text-color: #434455;
   --accent-color: #e7e9fc;
   --light-mode-color: #f4f4fd;
-  --bg-white-color: #ffffff;
+  --background-color: #ffffff;
+  --button-color: #ffffff;
 }
 
 h1,
@@ -40,7 +41,7 @@ body {
   font-size: 16px;
 
   color: var(--text-color);
-  background-color: var(--bg-white-color);
+  background-color: var(--background-color);
 }
 
 .container {
@@ -54,6 +55,20 @@ body {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* ======================== COMPONENTS ======================== */
@@ -174,8 +189,9 @@ body {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
 
-  color: var(--bg-white-color);
+  color: var(--button-color);
 
   width: 494px;
   margin-left: auto;
@@ -190,7 +206,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
 
-  color: var(--bg-white-color);
+  color: var(--button-color);
   background-color: var(--primary-brand-color);
   cursor: pointer;
 
@@ -235,6 +251,19 @@ body {
   letter-spacing: 0.02em;
 }
 
+.thumb {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--light-mode-color);
+
+  margin-bottom: 8px;
+}
+
+.advantages-icon {
+  margin: 24px 100px;
+}
+
 /* =============================== About work ========================== */
 
 .about-work {
@@ -262,7 +291,7 @@ body {
 }
 
 .team-card {
-  background-color: var(--bg-white-color);
+  background-color: var(--background-color);
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -294,7 +323,8 @@ body {
 
 .social-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 24px;
 }
 
 .social-link {
@@ -347,7 +377,7 @@ body {
 
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var(--bg-white-color);
+  color: var(--button-color);
   background-color: var(--pressed-state-color);
   border: 1px solid transparent;
 }
@@ -426,7 +456,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
-  color: var(--bg-white-color);
+  color: var(--button-color);
 
   margin-bottom: 16px;
 }
