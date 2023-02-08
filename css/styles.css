@@ -37,8 +37,6 @@ img {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 
   color: var(--text-color);
   background-color: var(--bg-white-color);
@@ -84,6 +82,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
 
@@ -105,7 +104,7 @@ body {
   justify-content: space-between;
 }
 
-.page-nav {
+.page-navigation {
   display: flex;
   align-items: center;
 }
@@ -121,6 +120,8 @@ body {
 
 .menu-link {
   font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--dark-color);
 }
 
@@ -142,6 +143,8 @@ body {
 
 .contact-mail,
 .contact-phone {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--text-color);
 }
 
@@ -169,6 +172,7 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  letter-spacing: 0.02em;
 
   color: var(--bg-white-color);
 
@@ -207,7 +211,6 @@ body {
 
 .advantages-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -219,10 +222,16 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 
   color: var(--dark-color);
 
   margin-bottom: 8px;
+}
+
+.advantages-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* =============================== About work ========================== */
@@ -269,10 +278,37 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 
   color: var(--dark-color);
 
   margin-bottom: 8px;
+}
+
+.team-position {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-brand-color);
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--pressed-state-color);
 }
 
 /* ============================ PORTFOLIO FILTERS ==================== */
@@ -332,10 +368,16 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 
   color: var(--dark-color);
 
   margin-bottom: 8px;
+}
+
+.project-card-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .project-description {
@@ -360,6 +402,9 @@ body {
 .slogan {
   width: 264px;
   margin-top: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 
   color: var(--accent-color);
 }
