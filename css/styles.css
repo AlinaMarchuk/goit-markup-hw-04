@@ -2,6 +2,7 @@
   --primary-brand-color: #4d5ae5;
   --pressed-state-color: #404bbf;
   --dark-color: #2e2f42;
+  --success-color: #31d0aa;
   --text-color: #434455;
   --accent-color: #e7e9fc;
   --light-mode-color: #f4f4fd;
@@ -98,7 +99,7 @@ body {
   border-bottom: 1px solid var(--accent-color);
 }
 
-.page-header-container {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -399,6 +400,12 @@ body {
   background-color: var(--dark-color);
 }
 
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 120px;
+}
+
 .slogan {
   width: 264px;
   margin-top: 16px;
@@ -407,4 +414,40 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
+}
+
+.media {
+  width: 208px;
+}
+
+.media-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--bg-white-color);
+
+  margin-bottom: 16px;
+}
+
+.media-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.media-link:hover,
+.media-link:focus {
+  background-color: var(--success-color);
 }
