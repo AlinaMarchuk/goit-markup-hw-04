@@ -191,7 +191,6 @@ body {
     url(../images/hero/bg.jpg);
   background-repeat: no-repeat;
   max-width: 1440px;
-  min-height: 600px;
   margin: 0 auto;
 }
 
@@ -263,16 +262,16 @@ body {
 }
 
 .thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 264px;
   height: 112px;
   border-radius: 4px;
   background-color: var(--light-mode-color);
 
   margin-bottom: 8px;
-}
-
-.advantages-icon {
-  margin: 24px 100px;
 }
 
 /* =============================== About work ========================== */
@@ -362,34 +361,31 @@ body {
 
 .customers-list {
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  justify-content: space-between;
 }
 
-.customers-item {
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 168px;
+  height: 88px;
+  color: var(--subtext-color);
+
   border: 1px solid var(--subtext-color);
   border-radius: 4px;
 }
 
-.customers-item:hover,
-.customers-item:focus {
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--pressed-state-color);
+
   border: 1px solid var(--pressed-state-color);
 }
 
-.customers-link {
-  display: block;
-  width: 168px;
-  height: 88px;
-}
-
 .customers-icon {
-  margin: 16px 32px;
-  fill: var(--subtext-color);
-}
-
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: var(--pressed-state-color);
+  fill: currentColor;
 }
 
 /* ============================ PORTFOLIO ==================== */
@@ -478,6 +474,7 @@ body {
 .project-card-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--text-color);
 }
 
 .project-description {
