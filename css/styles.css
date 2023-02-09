@@ -4,6 +4,7 @@
   --dark-color: #2e2f42;
   --success-color: #31d0aa;
   --text-color: #434455;
+  --subtext-color: #8e8f99;
   --accent-color: #e7e9fc;
   --light-mode-color: #f4f4fd;
   --background-color: #ffffff;
@@ -188,7 +189,7 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
+
   text-align: center;
 
   color: var(--button-color);
@@ -342,6 +343,45 @@ body {
   background-color: var(--pressed-state-color);
 }
 
+/* ============================ Customers ============================ */
+
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-item {
+  border: 1px solid var(--subtext-color);
+  border-radius: 4px;
+}
+
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid var(--pressed-state-color);
+}
+
+.customers-link {
+  display: block;
+  width: 168px;
+  height: 88px;
+}
+
+.customers-icon {
+  margin: 16px 32px;
+  fill: var(--subtext-color);
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--pressed-state-color);
+}
+
 /* ============================ PORTFOLIO FILTERS ==================== */
 
 .filters-list {
@@ -392,7 +432,7 @@ body {
 }
 
 .project-card {
-  flex-basis: calc((100% - 48px) / 4);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .project-card-title {
